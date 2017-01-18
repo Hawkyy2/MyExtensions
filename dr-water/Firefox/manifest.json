@@ -2,11 +2,15 @@
 "manifest_version": 2,
 "name" : "Water Doctor",
 "description" : "Remainds to drink Water every hour",
+<<<<<<< HEAD
 "applications": {
     "gecko": {
       "id": "shihan.viswa@gmail.com"
     }
   },
+=======
+
+>>>>>>> 76c74030ba41b181f830f4cf1ca144c5733bea47
 "homepage_url": "http://iamvp7.github.io/",
   "version": "1.0",
 
@@ -21,12 +25,17 @@
   "browser_action": {
     "default_icon": "icons/page-32.png",
     "default_title": "Open New Tab",
+<<<<<<< HEAD
     "default_popup": "popup_code/select-option.html"
   },
 
 	"permissions": [
 		"notifications","storage","tabs"
 	]
+=======
+    "default_popup": "popup/choose_beast.html"
+  }
+>>>>>>> 76c74030ba41b181f830f4cf1ca144c5733bea47
 
 
 }
