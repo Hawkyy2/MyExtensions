@@ -1,0 +1,15 @@
+{
+  "name": "Custom Search Engine",
+  "description" : "Type : followed by custom Suggestion or perdefined search engines to search",
+  "version": "1.0",
+  "applications": {
+    "gecko": {
+      "strict_min_version": "52.0a1"
+    }
+  },
+  "omnibox": { "keyword" : "ms" },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "manifest_version": 2
+}
