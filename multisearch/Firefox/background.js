@@ -1,6 +1,6 @@
 function resetDefaultSuggestion() {
   chrome.omnibox.setDefaultSuggestion({
-    description: 'dapi: Search the Drupal API for %s'
+    description: 'ms: multiple search  '
   });
 }
 
@@ -23,24 +23,6 @@ function navigate(url) {
 }
 
 chrome.omnibox.onInputEntered.addListener(function(text) {
-/*	
-	let parts = text.spilt(' ');
-	let partOne = parts[0];
-	let searchURL = findSearchEngin(partOne);
-
-	let query = '';
-
-  parts.forEach(part => {
-    if (!parts.indexOf(partOne) != 0) {
-      queryParts.push(part);
-    }
-  });
-
-  query = queryParts.join(' ');
-
-
-	console.log("query:::::::::::"+query+":::::::::::::::"+searchURL);
-*/
   navigate( text);
 });
 
@@ -70,7 +52,38 @@ function findURL(text){
 
 function findSearchEngin(searchEngText){
 	
-	if(searchEngText == 'wp'){
-		return 'https://wikipedia.org/wiki/Search?search='
+	if(searchEngText == 'w'){
+		return 'https://wikipedia.org/wiki/Search?search=';
 	}
+	else if(searchEngText == 'g'){
+		return 'https://www.google.co.in/search?q=';
+	}
+	else if(searchEngText == 'b'){
+		return 'http://www.bing.com/search?q=';
+	}
+	else if(searchEngText == 'd'){
+		return 'https://duckduckgo.com/?q=';
+	}
+	else if(searchEngText == 'y'){
+		return 'https://www.youtube.com/results?search_query=';
+	}
+	else if(searchEngText == 't'){
+                return 'https://twitter.com/search?q=';
+        }
+	else if(searchEngText == 'gh'){
+                return 'https://github.com/search?q=';
+        }
+	else if(searchEngText == 'ya'){
+                return 'https://www.yandex.com/search/?text=';
+        }
+	else if(searchEngText == 'wp'){
+                return 'https://en.search.wordpress.com/?src=organic&q=';
+        }
+	else if(searchEngText == 'a'){
+                return 'https://www.amazon.com/s/field-keywords=';
+        }
+
+	
+
+
 }
