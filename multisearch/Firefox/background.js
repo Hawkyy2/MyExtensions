@@ -14,16 +14,32 @@ chrome.omnibox.onInputCancelled.addListener(function() {
   resetDefaultSuggestion();
 });
 
-function navigate(url) {
+function navigate(text) {
 
-	url = findURL(url);
+	var url = findURL(text);
+	
+if( url != ''){	
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     chrome.tabs.update(tabs[0].id, {url: url});
   });
 }
+else{
+
+	var querying = browser.tabs.query({currentWindow: true});
+	querying.then(function(tabs){
+
+		for (let tab of tabs) {
+	   	 // tab.url requires the `tabs` permission
+  			  console.log(tab.url);
+ 			 }
+		console.log("tab url is::::"+tabs.url);
+		}, null);
+
+}
+}
 
 chrome.omnibox.onInputEntered.addListener(function(text) {
-  navigate( text);
+  navigate(text);
 });
 
 
@@ -32,6 +48,11 @@ function findURL(text){
 	var partOne = parts[0];
 	var searchURL = findSearchEngin(partOne);
 
+
+	console.log("Search URL"+searchURL);
+	if(searchURL == ''){
+		return '';
+	}
 	console.log(searchURL);
 	var  queryParts = [];
 
@@ -82,8 +103,8 @@ function findSearchEngin(searchEngText){
 	else if(searchEngText == 'a'){
                 return 'https://www.amazon.com/s/field-keywords=';
         }
-
-	
-
-
+	else if(searchEngText == 's'){
+		return 'http://stackoverflow.com/search';
+	}
+	return '';
 }
