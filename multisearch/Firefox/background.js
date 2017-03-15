@@ -1,16 +1,18 @@
 function resetDefaultSuggestion() {
-  chrome.omnibox.setDefaultSuggestion({
-    description: 'ms: multiple search  '
+  browser.omnibox.setDefaultSuggestion({
+    description: 'Multiple search  '
   });
 }
 
 resetDefaultSuggestion();
 
-chrome.omnibox.onInputChanged.addListener(function(text, suggest) {
+browser.omnibox.onInputChanged.addListener(function(text, suggest) {
   // Suggestion code will end up here.
+			
+	browser.omnibox.SuggestResult({'description': text});
 });
 
-chrome.omnibox.onInputCancelled.addListener(function() {
+browser.omnibox.onInputCancelled.addListener(function() {
   resetDefaultSuggestion();
 });
 
@@ -19,8 +21,8 @@ function navigate(text) {
 	var url = findURL(text);
 	
 if( url != ''){	
-  chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-    chrome.tabs.update(tabs[0].id, {url: url});
+  browser.tabs.query({active: true, currentWindow: true}, function(tabs) {
+    browser.tabs.update(tabs[0].id, {url: url});
   });
 }
 else{
@@ -38,7 +40,7 @@ else{
 }
 }
 
-chrome.omnibox.onInputEntered.addListener(function(text) {
+browser.omnibox.onInputEntered.addListener(function(text) {
   navigate(text);
 });
 
@@ -108,3 +110,45 @@ function findSearchEngin(searchEngText){
 	}
 	return '';
 }
+
+
+
+function findSearchName(searchEngText){
+
+        if(searchEngText == 'w'){
+                return 'wiki';
+        }
+        else if(searchEngText == 'g'){
+                return 'google';
+        }
+        else if(searchEngText == 'b'){
+                return 'bing';
+        }
+        else if(searchEngText == 'd'){
+                return 'duckduckgo';
+        }
+        else if(searchEngText == 'y'){
+                return 'youtube';
+        }
+        else if(searchEngText == 't'){
+                return 'twitter';
+        }
+        else if(searchEngText == 'gh'){
+                return 'github';
+        }
+        else if(searchEngText == 'ya'){
+                return 'yandex';
+        }
+        else if(searchEngText == 'wp'){
+                return 'wordpress';
+        }
+        else if(searchEngText == 'a'){
+                return 'amazon';
+        }
+        else if(searchEngText == 's'){
+                return 'stackoverflow';
+        }
+        return '';
+}
+
+
