@@ -1,10 +1,10 @@
 {
 "manifest_version": 2,
-"name" : "Youtube controller",
-"description" : "Control Youtube play without visiting the tab.",
+"name" : "Full Youtube controller",
+"description" : "New trying Control Youtube play without visiting the tab.",
 
 "homepage_url": "http://iamvp7.github.io/",
-  "version": "1.0",
+  "version": "2.0",
 
 "icons": {
     "48": "icons/icon-48.png",
@@ -15,15 +15,23 @@
   },
   "permissions" : [
 	"*://*.youtube.com/*",
-	"tabs"
+	"tabs",
+	"history",
+	"activeTab"
 	],
+ "content_scripts": [
+    {
+        "matches" : ["*://*.youtube.com/*"],
+        "js": ["popup/youtube.js"]
+    }
+    ],
+
   "browser_action": {
     "default_icon": {
       "19": "icons/icon-19.png",
       "38": "icons/icon-38.png"
     },
-    "default_title": "Control your Youtube Player",
-    "default_popup": "popup/youtube.html"
+    "default_title": "New youtue Control your Youtube Player"
   }
 
 
