@@ -1,0 +1,18 @@
+{
+"manifest_version": 2,
+"name" : "Notfication Alarm",
+"description" : "Sending Notification and Alarm",
+
+"homepage_url": "http://iamvp7.github.io/",
+  "version": "2.0",
+
+  "permissions" : [
+	"notifications",
+	"alarms"
+	],
+"background": {
+    "scripts": ["background.js"]
+  }
+
+
+}
