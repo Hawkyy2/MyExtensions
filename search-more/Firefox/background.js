@@ -20,11 +20,8 @@ function contextMenuAction(info, tab){
 		
 		// When the URL is not null, create a new tab to search
 		if( url != ''){
-			  browser.tabs.query({active: true, currentWindow: true}, function(tabs) {
 			  browser.tabs.create({url: url});
-  			});
 		}
-
 
 	}
 
