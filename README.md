@@ -3,9 +3,9 @@ This repo contains all the Firefox Add-ons built using Javascript API. It also h
 
 I am trying to share the source code and the respective explanation of the code flow is based on Firefox Add-on. There wont be much difference between Chrome code and Firefox Code.
 
-## youtube-control
-- [github](https://github.com/iamVP7/MyExtensions/tree/master/youtube-control)
-- [blog post](http://iamvp7.in/My-First-Firefox-Add-on-at-AMO/)
+## Setup Firefox for Web Extension development
+ - [Setup](http://iamvp7.in/Lets-Get-Started-With-WebExtensions/)
+ - [Running Add-ons] (http://iamvp7.in/Running-WebExtension-in-Firefox//) *out dated*
 
 ## tabClose  API
 - [github](https://github.com/iamVP7/MyExtensions/tree/master/tabclose)
@@ -13,7 +13,23 @@ I am trying to share the source code and the respective explanation of the code 
 
 ## tabOpen  API
 - [github](https://github.com/iamVP7/MyExtensions/tree/master/tabopen)
-- [blog post]()
+- [blog post](http://iamvp7.in/Writing-My-First-Extension//)
+
+## tabUpdate  API
+- [github](https://github.com/iamVP7/MyExtensions/tree/master/tabopen)
+- [blog post](https://github.com/iamVP7/MyExtensions/tree/master/tabupda/Firefox)
+
+## Notification API 
+- [github](https://github.com/iamVP7/MyExtensions/tree/master/notify/Firefox)
+- [blog post](http://iamvp7.in/Notifications-WebExtension-API/)
+
+## Alarm API 
+- [github](https://github.com/iamVP7/MyExtensions/tree/master/notify/Firefox)
+- [blog post](http://iamvp7.in/Create-Alarm-And-Notification/)
+
+## executeScript API
+- [github](https://github.com/iamVP7/MyExtensions/tree/master/youtube-control/Chrome)
+- [blog post](http://iamvp7.in/My-First-Firefox-Add-on-at-AMO/)
 
 
 ## ContextMenu API 
@@ -26,6 +42,3 @@ I am trying to share the source code and the respective explanation of the code 
 - [blog post](http://iamvp7.in/Build-Quick-Search-In-Firefox-Using-WebExtensions/)
 
 
-## tabClose 
-- [github]()
-- [blog post]()
