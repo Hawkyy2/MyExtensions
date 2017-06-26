@@ -5,7 +5,7 @@ I am trying to share the source code and the respective explanation of the code 
 
 ## Setup Firefox for Web Extension development
  - [Setup](http://iamvp7.in/Lets-Get-Started-With-WebExtensions/)
- - [Running Add-ons] (http://iamvp7.in/Running-WebExtension-in-Firefox//) *out dated*
+ - [Running Add-ons](http://iamvp7.in/Running-WebExtension-in-Firefox//)
 
 ## tabClose  API
 - [github](https://github.com/iamVP7/MyExtensions/tree/master/tabclose)
@@ -42,3 +42,6 @@ I am trying to share the source code and the respective explanation of the code 
 - [blog post](http://iamvp7.in/Build-Quick-Search-In-Firefox-Using-WebExtensions/)
 
 
+**Note:** 
+ - Keep an eye on this READ.md will be updating as I try to experiment more add-ons. 
+ - Will love if these code is used by you to show in the demo when you share about WebExtension development to others.
