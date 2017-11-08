@@ -6,18 +6,24 @@ I am trying to share the source code and the respective explanation of the code 
 ## Setup Firefox for Web Extension development
  - [Setup](http://iamvp7.in/Lets-Get-Started-With-WebExtensions/)
  - [Running Add-ons](http://iamvp7.in/Running-WebExtension-in-Firefox//)
+ - [Youtube Video 1](https://www.youtube.com/watch?v=DUToENHAX7s)
+ - [Youtube Video 2](https://www.youtube.com/watch?v=cPhZF7kOR3k)
+ 
 
 ## tabClose  API
 - [github](https://github.com/iamVP7/MyExtensions/tree/master/tabclose)
 - [blog post](http://iamvp7.in/Simple-Tab-Closing-Extension/)
+- [Youtube Video](https://www.youtube.com/watch?v=GS1nM55iKZo)
 
 ## tabOpen  API
 - [github](https://github.com/iamVP7/MyExtensions/tree/master/tabopen)
 - [blog post](http://iamvp7.in/Writing-My-First-Extension//)
+- [Youtube Video](https://www.youtube.com/watch?v=GS1nM55iKZo)
 
 ## tabUpdate  API
 - [github](https://github.com/iamVP7/MyExtensions/tree/master/tabopen)
 - [blog post](https://github.com/iamVP7/MyExtensions/tree/master/tabupda/Firefox)
+- [Youtube Video](https://www.youtube.com/watch?v=GS1nM55iKZo)
 
 ## Notification API 
 - [github](https://github.com/iamVP7/MyExtensions/tree/master/notify/Firefox)
@@ -30,6 +36,7 @@ I am trying to share the source code and the respective explanation of the code 
 ## executeScript API
 - [github](https://github.com/iamVP7/MyExtensions/tree/master/youtube-control/Chrome)
 - [blog post](http://iamvp7.in/My-First-Firefox-Add-on-at-AMO/)
+- [Youtube Video](https://www.youtube.com/watch?v=1MbJanr9THU)
 
 
 ## ContextMenu API 
@@ -40,6 +47,7 @@ I am trying to share the source code and the respective explanation of the code 
 ## OmniBox API 
 - [github](https://github.com/iamVP7/MyExtensions/tree/master/multisearch/Firefox)
 - [blog post](http://iamvp7.in/Build-Quick-Search-In-Firefox-Using-WebExtensions/)
+- [Youtube Video](https://www.youtube.com/watch?v=7STqoxJJCE8)
 
 
 **Note:** 
